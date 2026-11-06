@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beleza Natural do Paraná</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: lightgray;
+            padding: 15px;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            min-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main id="conteudo">
+
+    </main>
+
+    <script>
+
+        document.body.style.backgroundColor = "#f4ece8"; 
+        
+
+        const header = document.querySelector("header");
+        const nav = document.querySelector("nav");
+        const main = document.getElementById("conteudo");
+
+
+        header.style.textAlign = "center";
+        header.style.backgroundColor = "#80453B";
+        header.style.color = "#E6CBC5";
+        nav.style.textAlign = "center";
+        nav.style.backgroundColor = "#D6614B";
+        
+
+        document.querySelector("header h1").textContent = "Belezas do Paraná";
+
+        main.style.textAlign = "center";
+        main.style.maxWidth = "700px";
+        main.style.margin = "20px auto";
+        main.style.borderRadius = "10px";
+
+
+        
+        const titulo = document.createElement("h1");
+        titulo.textContent = "Parque Estadual de Vila Velha";
+        titulo.style.color = "#8b4513";
+        main.appendChild(titulo);
+
+
+        const imagem = document.createElement("img");
+        imagem.src = "https://upload.wikimedia.org/wikipedia/commons/2/20/Vila_Velha2.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original";
+        imagem.style.width = "50%";
+        imagem.style.borderRadius = "8px";
+        main.appendChild(imagem);
+
+
+        const paragrafo = document.createElement("p");
+        paragrafo.textContent = "Localizado em Ponta Grossa, o Parque Estadual de Vila Velha é o primeiro parque estadual criado no Paraná. O local é famoso por suas impressionantes formações rochosas de arenito, esculpidas pela ação do tempo, e pelas profundas furnas com lençóis freáticos.";
+        main.appendChild(paragrafo);
+
+    </script>
+
+</body>
+</html>
